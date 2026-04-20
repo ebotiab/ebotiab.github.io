@@ -29,7 +29,7 @@ jobs:
           fetch-depth: 0  # historial completo (útil por si añadimos plugin de fechas)
 
       - name: Instalar uv
-        uses: astral-sh/setup-uv@v3
+        uses: astral-sh/setup-uv@v5
         with:
           enable-cache: true   # cachea ~/.cache/uv entre runs para que sea rápido
 
