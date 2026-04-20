@@ -1,0 +1,103 @@
+site_name: Enrique Botía Barberá
+site_description: Python backend engineer — freelance
+site_url: https://ebotiab.github.io/
+site_author: Enrique Botía Barberá
+
+repo_url: https://github.com/ebotiab/ebotiab.github.io
+repo_name: ebotiab/ebotiab.github.io
+
+theme:
+  name: material
+  language: es
+  custom_dir: overrides
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: green
+      accent: green
+      toggle:
+        icon: material/weather-sunny
+        name: Cambiar a modo oscuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: green
+      accent: light green
+      toggle:
+        icon: material/weather-night
+        name: Cambiar a modo claro
+  font:
+    text: Roboto
+    code: Roboto Mono
+  features:
+    # navigation.instant está omitido a propósito: es incompatible con el
+    #   language switcher del plugin mkdocs-static-i18n.
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.top
+    - content.code.copy
+
+extra_css:
+  - assets/extra.css
+
+nav:
+  - Inicio: index.md
+  - Sobre mí: about.md
+  - Servicios: services.md
+  - Proyectos: projects.md
+  - Contacto: contact.md
+
+plugins:
+  - search
+  - i18n:
+      # docs_structure: suffix => usamos sufijos de idioma (index.md + index.en.md),
+      #   en vez de subcarpetas tipo docs/es/ y docs/en/. Más sencillo.
+      docs_structure: suffix
+      # Si falta una traducción, MkDocs muestra la versión del idioma por defecto
+      #   en lugar de un 404. Útil mientras traducimos poco a poco.
+      fallback_to_default: true
+      languages:
+        - locale: es
+          default: true
+          name: Español
+          build: true
+          site_name: Enrique Botía Barberá
+          site_description: Python backend engineer — freelance
+        - locale: en
+          name: English
+          build: true
+          site_name: Enrique Botía Barberá
+          site_description: Python backend engineer — freelance
+          # Traducción de las entradas del nav a inglés.
+          nav_translations:
+            Inicio: Home
+            Sobre mí: About
+            Servicios: Services
+            Proyectos: Projects
+            Contacto: Contact
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ebotiab
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/enrique-botia-barbera
+    - icon: fontawesome/brands/x-twitter
+      link: https://twitter.com/EnriqueB62827
+      name: "@EnriqueB62827 en Twitter/X"
+    - icon: fontawesome/solid/envelope
+      link: mailto:enribotia@gmail.com

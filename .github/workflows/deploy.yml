@@ -1,0 +1,58 @@
+name: Deploy site to GitHub Pages
+
+# Cuándo se ejecuta este workflow:
+on:
+  push:
+    branches: [main]         # cada push a main dispara un deploy
+  workflow_dispatch:          # permite lanzarlo a mano desde la UI de GitHub
+
+# Permisos mínimos que necesita el workflow para publicar en Pages.
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Evita deploys concurrentes: si empujas dos veces seguidas,
+# el segundo espera al primero en lugar de pisarlo.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  # Job 1: construir el sitio estático con mkdocs.
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout del repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # historial completo (útil por si añadimos plugin de fechas)
+
+      - name: Instalar uv
+        uses: astral-sh/setup-uv@v3
+        with:
+          enable-cache: true   # cachea ~/.cache/uv entre runs para que sea rápido
+
+      - name: Instalar Python y dependencias
+        run: uv sync
+
+      - name: Build del sitio
+        run: uv run mkdocs build --strict
+        # --strict hace fallar el build si hay cualquier warning.
+        # Buena práctica en CI: detecta enlaces rotos, pages huérfanas, etc.
+
+      - name: Subir artefacto para Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site  # la carpeta donde mkdocs escribe el HTML
+
+  # Job 2: tomar el artefacto y publicarlo en GitHub Pages.
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

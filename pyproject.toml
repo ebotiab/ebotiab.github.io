@@ -1,0 +1,16 @@
+[project]
+name = "freelance-webpage"
+version = "0.1.0"
+description = "Enrique Botía Barberá — personal freelance site"
+requires-python = ">=3.11"
+dependencies = [
+    # Pin to 9.5.x: versiones 9.7+ incluyen un banner del mantenedor sobre MkDocs 2.0.
+    # 9.5.x es estable, mantiene todas las features que usamos y no imprime el warning.
+    "mkdocs-material>=9.5,<9.6",
+    "mkdocs-static-i18n>=1.2",
+]
+
+[tool.uv]
+# uv is the package manager we'll use to install dependencies.
+# Run:  uv sync     to install
+#       uv run mkdocs serve    to start the dev server

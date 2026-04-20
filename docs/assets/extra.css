@@ -1,0 +1,127 @@
+/* ============================================================
+   Paleta: verde oscuro personalizado
+   ============================================================
+   Material solo trae "green" (claro) — sobrescribimos sus
+   variables para conseguir un verde bosque más serio.
+   Se aplica tanto en claro como en oscuro; en oscuro usamos
+   un tono algo más luminoso para mantener contraste.
+   ============================================================ */
+
+[data-md-color-primary="green"] {
+  --md-primary-fg-color:        #1b5e20;  /* green 900 — header, botones */
+  --md-primary-fg-color--light: #2e7d32;  /* green 800 — hover */
+  --md-primary-fg-color--dark:  #0d3d10;  /* aún más oscuro, bordes */
+}
+
+[data-md-color-accent="green"] {
+  --md-accent-fg-color:            #2e7d32;  /* links, focus */
+  --md-accent-fg-color--transparent: #2e7d3222;
+}
+
+/* En modo oscuro subimos la luminosidad para que siga legible. */
+[data-md-color-scheme="slate"][data-md-color-primary="green"] {
+  --md-primary-fg-color:        #2e7d32;
+  --md-primary-fg-color--light: #43a047;
+  --md-primary-fg-color--dark:  #1b5e20;
+}
+
+[data-md-color-scheme="slate"][data-md-color-accent="light-green"] {
+  --md-accent-fg-color:            #81c784;
+  --md-accent-fg-color--transparent: #81c78422;
+}
+
+/* ============================================================
+   Hero de la home
+   ============================================================
+   Layout: foto a la derecha, texto a la izquierda.
+   En móvil pasa a columna (foto arriba, texto debajo).
+   ============================================================ */
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  max-width: 1100px;
+  margin: 2rem auto 4rem;
+  flex-wrap: wrap-reverse; /* en móvil: foto arriba, texto abajo */
+}
+
+.hero__text {
+  flex: 1 1 420px;
+}
+
+.hero__photo {
+  flex: 0 0 auto;
+}
+
+/* La foto recortada en círculo, con sombra suave. */
+.hero__img,
+.hero__photo img {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 0%; /* encuadra la cara (está en la parte alta de la foto) */
+  box-shadow: 0 6px 28px rgba(0, 0, 0, 0.18);
+  display: block;
+}
+
+/* Nombre grande y con peso. */
+.hero__name {
+  font-size: 2.6rem !important;
+  font-weight: 800 !important;
+  line-height: 1.15;
+  margin: 0 0 1rem !important;
+}
+
+/* Lead: párrafo introductorio, un poco más grande y gris. */
+.hero__lead {
+  font-size: 1.1rem;
+  line-height: 1.65;
+  color: var(--md-default-fg-color--light);
+  margin: 1.5rem 0 2rem;
+}
+
+.hero__lead strong {
+  color: var(--md-default-fg-color);
+}
+
+/* Fila de botones CTA — se apilan en pantallas estrechas. */
+.hero__actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+/* El bloque de código del tagline — le damos un toque sutil
+   para que parezca una línea de terminal, no un snippet cualquiera. */
+.hero__text .highlight pre {
+  font-size: 1rem;
+  padding: 0.9rem 1.1rem;
+  border-left: 3px solid var(--md-primary-fg-color);
+}
+
+/* Ocultar el título de página de MkDocs ("Inicio") en la home,
+   ya que nuestro propio H1 del hero cumple esa función. */
+.md-content__inner > h1:first-child {
+  display: none;
+}
+
+/* Responsive: en móvil el hero se apila y centramos el texto. */
+@media (max-width: 768px) {
+  .hero {
+    gap: 1.5rem;
+    text-align: center;
+  }
+  .hero__img,
+  .hero__photo img {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    object-position: center 0%;
+  }
+  .hero__actions {
+    justify-content: center;
+  }
+}
