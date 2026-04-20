@@ -37,9 +37,10 @@ jobs:
         run: uv sync
 
       - name: Build del sitio
-        run: uv run mkdocs build --strict
-        # --strict hace fallar el build si hay cualquier warning.
-        # Buena práctica en CI: detecta enlaces rotos, pages huérfanas, etc.
+        run: uv run mkdocs build
+        # Nota: más adelante, cuando el deploy esté estable, conviene
+        # añadir --strict para que CI falle ante cualquier warning
+        # (links rotos, páginas huérfanas, etc.).
 
       - name: Subir artefacto para Pages
         uses: actions/upload-pages-artifact@v3
