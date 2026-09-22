@@ -19,7 +19,7 @@ Mi trayectoria combina **desarrollo backend en Python, ciencia de datos e inteli
 
 <div class="hero__actions" markdown>
 [Ver experiencia :material-arrow-right:](projects.md){ .md-button .md-button--primary }
-[Sobre mí](about.md){ .md-button }
+[Descargar CV (PDF) :material-download:](assets/Enrique_Botia_Barbera_CV.pdf){ .md-button download="Enrique_Botia_Barbera_CV.pdf" }
 </div>
 
 </div>

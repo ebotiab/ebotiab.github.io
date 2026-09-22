@@ -19,3 +19,5 @@ Me interesa el desarrollo de software mantenible y la evaluación rigurosa de si
 ## Idiomas
 
 Español (nativo) · Catalán (C1) · Inglés (C1)
+
+[Descargar CV (PDF) :material-download:](assets/Enrique_Botia_Barbera_CV.pdf){ .md-button download="Enrique_Botia_Barbera_CV.pdf" }

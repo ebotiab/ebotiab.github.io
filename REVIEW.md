@@ -32,7 +32,10 @@ Revisión del código y de las diez páginas en español e inglés, con comproba
 
 1. **Optimizar el archivo de la foto.** El JPEG original ocupa 1.756.150 bytes y mide 2268 × 4032 píxeles, aunque se muestra en un círculo de hasta 280 píxeles. Una copia optimizada para web reduciría la transferencia; se ha conservado el original sin modificar sus píxeles.
 2. **Concretar resultados profesionales.** Algunas frases siguen siendo generales, especialmente la referencia a oportunidades de crecimiento. Conviene sustituirlas por aportaciones específicas y, cuando existan, resultados medidos y publicables. No se han inventado cifras ni responsabilidades.
-3. **CV descargable.** Un PDF breve sería útil para compartir el perfil fuera de la web. Requiere decidir qué información y nivel de detalle incluir.
-4. **Mantenimiento de GitHub Actions.** El despliegue anterior terminó correctamente, pero GitHub avisó de acciones declaradas para Node 20 que ejecuta con Node 24. Conviene actualizar esas acciones en una revisión específica de dependencias.
+
+## Mejoras completadas tras la revisión
+
+- **CV descargable:** se incorporó el PDF actualizado facilitado por Enrique, sin modificarlo, con enlaces de descarga en la portada y en «Sobre mí» en ambos idiomas.
+- **GitHub Actions:** actualizados [checkout a v7.0.1](https://github.com/actions/checkout/releases/tag/v7.0.1), [setup-uv a v10.2.0](https://github.com/astral-sh/setup-uv/releases/tag/v10.2.0), [upload-pages-artifact a v5.0.0](https://github.com/actions/upload-pages-artifact/releases/tag/v5.0.0) y [deploy-pages a v5.0.1](https://github.com/actions/deploy-pages/releases/tag/v5.0.1), fijados por SHA. Estas versiones utilizan Node 24, directamente o mediante la acción de subida de artefactos. Se fijaron Ubuntu 24.04, Python 3.12 y uv 0.12.17 para mantener un entorno predecible; la instalación respeta `uv.lock` con `--locked`.
 
 La revisión reduce problemas conocidos; no implica que la web no pueda seguir mejorando ni verifica por sí sola la exactitud de títulos académicos, niveles de idiomas o toda la trayectoria laboral.

@@ -28,6 +28,7 @@ Open the local address printed by MkDocs.
 | `docs/contact.md` | Contact information. |
 | `docs/*.en.md` | English counterparts of the pages above. |
 | `docs/assets/` | Images and custom CSS. |
+| `docs/assets/Enrique_Botia_Barbera_CV.pdf` | Downloadable CV, linked from Home and About in both languages. |
 | `mkdocs.yml` | Navigation, theme and language configuration. |
 
 Keep the Spanish page and its `.en.md` counterpart aligned when updating content. Spanish is the default language; the configured fallback displays default-language content when a translation is missing.
@@ -43,3 +44,5 @@ The generated site is written to `site/`. The [deployment workflow](.github/work
 See [pyproject.toml](pyproject.toml) for dependencies and `uv.lock` for the locked environment.
 
 The old `/services/` and `/en/services/` URLs redirect to the corresponding skills pages. Social sharing metadata lives in `overrides/main.html`; each page supplies its own description in its Markdown front matter.
+
+Deployment actions are pinned to release commit SHAs. When updating them, keep each SHA and its version comment aligned. CI uses Ubuntu 24.04, Python 3.12 and uv 0.12.17, and installs dependencies with `uv sync --locked`.

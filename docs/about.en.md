@@ -19,3 +19,5 @@ My interests include maintainable software and rigorous evaluation of AI systems
 ## Languages
 
 Spanish (native) · Catalan (C1) · English (C1)
+
+[Download CV (PDF) :material-download:](assets/Enrique_Botia_Barbera_CV.pdf){ .md-button download="Enrique_Botia_Barbera_CV.pdf" }

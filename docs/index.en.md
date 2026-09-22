@@ -19,7 +19,7 @@ My background combines **Python backend development, data science and artificial
 
 <div class="hero__actions" markdown>
 [View experience :material-arrow-right:](projects.md){ .md-button .md-button--primary }
-[About me](about.md){ .md-button }
+[Download CV (PDF) :material-download:](assets/Enrique_Botia_Barbera_CV.pdf){ .md-button download="Enrique_Botia_Barbera_CV.pdf" }
 </div>
 
 </div>
