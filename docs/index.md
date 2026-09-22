@@ -19,7 +19,7 @@ Construyo **backends, APIs y pipelines de datos** en Python. Me llaman cuando un
 
 <div class="hero__actions" markdown>
 [Hablemos de tu proyecto :material-arrow-right:](contact.md){ .md-button .md-button--primary }
-[Ver servicios](services.md){ .md-button }
+[Explorar proyectos](projects.md){ .md-button }
 </div>
 
 </div>

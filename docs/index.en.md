@@ -19,7 +19,7 @@ I build **backends, APIs and data pipelines** in Python. People call me when a m
 
 <div class="hero__actions" markdown>
 [Let's talk about your project :material-arrow-right:](contact.md){ .md-button .md-button--primary }
-[See services](services.md){ .md-button }
+[Explore projects](projects.md){ .md-button }
 </div>
 
 </div>
