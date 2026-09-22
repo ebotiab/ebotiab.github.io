@@ -25,6 +25,8 @@ Una selección de contribuciones integradas en los proyectos originales:
 
 *Cambridge (remoto) · Febrero 2024 – actualidad*
 
+Inicio del contrato indefinido: **1 de octubre de 2026**.
+
 - Optimización de procesos de ingeniería con **Azure AI**, **n8n** y **FastAPI**.
 - Mejora del rendimiento de sistemas GenAI mediante **Retrieval Augmented Generation** y evaluación con **LLM-as-a-judge**.
 - Exploración del uso de IA para diversificar oportunidades de crecimiento.

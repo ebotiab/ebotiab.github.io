@@ -4,7 +4,7 @@ I'm Enrique, a software engineer focused on Python backend. I currently work as 
 
 I hold a **BSc in Data Science and Engineering** and an **MSc in Machine Learning for Health** from Universidad Carlos III de Madrid. My work spans NLP, deep learning with PyTorch, forecasting, and more recently RAG architectures and LLM-as-a-judge pipelines.
 
-I take on freelance projects where I can bring that mix: **solid Python backend + AI components when they add real value**, not when they're just trending.
+My interests include maintainable software and rigorous evaluation of AI systems. My work connects software engineering with applied machine learning research.
 
 ## Education
 

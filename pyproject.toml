@@ -1,7 +1,7 @@
 [project]
 name = "freelance-webpage"
 version = "0.1.0"
-description = "Enrique Botía Barberá — personal freelance site"
+description = "Enrique Botía Barberá — professional profile and CV"
 requires-python = ">=3.11"
 dependencies = [
     # Pin to 9.5.x: versiones 9.7+ incluyen un banner del mantenedor sobre MkDocs 2.0.

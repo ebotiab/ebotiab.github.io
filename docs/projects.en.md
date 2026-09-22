@@ -25,6 +25,8 @@ Selected contributions merged into the original projects:
 
 *Cambridge (remote) · February 2024 – present*
 
+Permanent contract start date: **1 October 2026**.
+
 - Optimising engineering processes with **Azure AI**, **n8n** and **FastAPI**.
 - Improving GenAI system performance via **Retrieval Augmented Generation** and evaluation with **LLM-as-a-judge**.
 - Exploring AI's potential to diversify growth opportunities.

@@ -4,7 +4,7 @@ Soy Enrique, ingeniero de software centrado en backend Python. Actualmente traba
 
 Mi formación es en **Data Science e Ingeniería** (BSc) y **Machine Learning para Salud** (MSc) por la Universidad Carlos III de Madrid. He pasado por proyectos de NLP, deep learning con PyTorch, forecasting y más recientemente arquitecturas RAG y LLM-as-a-judge.
 
-Abro espacio para proyectos freelance donde pueda aportar esa mezcla: **backend sólido en Python + componentes de IA cuando aportan valor real**, no cuando están de moda.
+Me interesa el desarrollo de software mantenible y la evaluación rigurosa de sistemas de IA. Mi trabajo conecta la ingeniería de software con la investigación aplicada en aprendizaje automático.
 
 ## Formación
 

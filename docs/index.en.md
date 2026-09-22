@@ -10,16 +10,15 @@ hide:
 
 # Enrique Botía Barberá { .hero__name }
 
-```python
-uv add "python backend engineer freelancer :)"
-```
+Software Engineer · Python · Generative AI
+{ .hero__role }
 
-I build **backends, APIs and data pipelines** in Python. People call me when a manual process needs to become reliable automation, or when an idea needs a robust API behind it.
+My background combines **Python backend development, data science and artificial intelligence**. This site brings together my professional experience, education and technical skills.
 { .hero__lead }
 
 <div class="hero__actions" markdown>
-[Let's talk about your project :material-arrow-right:](contact.md){ .md-button .md-button--primary }
-[Explore projects](projects.md){ .md-button }
+[View experience :material-arrow-right:](projects.md){ .md-button .md-button--primary }
+[About me](about.md){ .md-button }
 </div>
 
 </div>

@@ -1,5 +1,5 @@
 site_name: Enrique Botía Barberá
-site_description: Python backend engineer — freelance
+site_description: Perfil profesional de Enrique Botía Barberá — ingeniería de software, Python e inteligencia artificial.
 site_url: https://ebotiab.github.io/
 site_author: Enrique Botía Barberá
 
@@ -42,8 +42,8 @@ extra_css:
 nav:
   - Inicio: index.md
   - Sobre mí: about.md
-  - Servicios: services.md
-  - Proyectos: projects.md
+  - Experiencia: projects.md
+  - Competencias: skills.md
   - Contacto: contact.md
 
 plugins:
@@ -61,18 +61,18 @@ plugins:
           name: Español
           build: true
           site_name: Enrique Botía Barberá
-          site_description: Python backend engineer — freelance
+          site_description: Perfil profesional de Enrique Botía Barberá — ingeniería de software, Python e inteligencia artificial.
         - locale: en
           name: English
           build: true
           site_name: Enrique Botía Barberá
-          site_description: Python backend engineer — freelance
+          site_description: Enrique Botía Barberá — professional profile, software engineering, Python and artificial intelligence.
           # Traducción de las entradas del nav a inglés.
           nav_translations:
             Inicio: Home
             Sobre mí: About
-            Servicios: Services
-            Proyectos: Projects
+            Experiencia: Experience
+            Competencias: Skills
             Contacto: Contact
 
 markdown_extensions:

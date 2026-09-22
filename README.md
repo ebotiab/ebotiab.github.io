@@ -24,7 +24,7 @@ Open the local address printed by MkDocs.
 | `docs/index.md` | Home page in Spanish. |
 | `docs/about.md` | Background and education. |
 | `docs/projects.md` | Projects and professional experience. |
-| `docs/services.md` | Services. |
+| `docs/skills.md` | Technical skills. |
 | `docs/contact.md` | Contact information. |
 | `docs/*.en.md` | English counterparts of the pages above. |
 | `docs/assets/` | Images and custom CSS. |

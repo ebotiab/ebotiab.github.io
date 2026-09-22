@@ -62,7 +62,7 @@
   height: 280px;
   border-radius: 50%;
   object-fit: cover;
-  object-position: center 0%; /* encuadra la cara (está en la parte alta de la foto) */
+  object-position: center 64%; /* centra el rostro en el retrato IMG_3902 */
   box-shadow: 0 6px 28px rgba(0, 0, 0, 0.18);
   display: block;
 }
@@ -94,12 +94,11 @@
   flex-wrap: wrap;
 }
 
-/* El bloque de código del tagline — le damos un toque sutil
-   para que parezca una línea de terminal, no un snippet cualquiera. */
-.hero__text .highlight pre {
+/* Especialidad profesional bajo el nombre. */
+.hero__role {
   font-size: 1rem;
-  padding: 0.9rem 1.1rem;
-  border-left: 3px solid var(--md-primary-fg-color);
+  font-weight: 600;
+  color: var(--md-default-fg-color--light);
 }
 
 /* Ocultar el título de página de MkDocs ("Inicio") en la home,
@@ -113,13 +112,13 @@
   .hero {
     gap: 1.5rem;
     text-align: center;
+    justify-content: center;
   }
   .hero__img,
   .hero__photo img {
     width: 200px;
     height: 200px;
     margin: 0 auto;
-    object-position: center 0%;
   }
   .hero__actions {
     justify-content: center;
