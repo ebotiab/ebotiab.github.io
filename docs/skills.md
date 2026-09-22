@@ -1,3 +1,7 @@
+---
+description: "Competencias técnicas de Enrique Botía Barberá en Python, FastAPI, IA generativa, RAG, PyTorch, procesamiento del lenguaje natural y datos."
+---
+
 # Competencias técnicas
 
 Mi experiencia abarca el desarrollo backend, la ingeniería de datos y la aplicación de modelos de inteligencia artificial.

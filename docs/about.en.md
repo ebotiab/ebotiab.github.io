@@ -1,3 +1,7 @@
+---
+description: "Background and education of Enrique Botía Barberá: Generative AI Engineer at IP Mind LTD, with Data Science and Machine Learning degrees from UC3M."
+---
+
 # About
 
 I'm Enrique, a software engineer focused on Python backend. I currently work as a **Generative AI Engineer** at IP Mind LTD (Cambridge, remote), where I design pipelines with FastAPI, n8n and Azure AI.

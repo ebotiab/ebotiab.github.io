@@ -1,23 +1,8 @@
+---
+description: "Enrique Botía Barberá’s experience at IP Mind LTD, Icaria Technology and UC3M, selected public projects and open-source contributions."
+---
+
 # Projects and experience
-
-## Selected projects
-
-These public repositories show my work in Python, applied AI and automation. Each link opens the implementation and its documentation.
-
-| Project | What to look at |
-| --- | --- |
-| [Speech-based depression estimation](https://github.com/ebotiab/ade-daic-woz) | A research pipeline for DAIC-WOZ: transcript preprocessing, class balancing, PyTorch training and evaluation, and a Streamlit explorer. Dataset access is restricted; the repository is a research implementation. |
-| [azhacks](https://github.com/ebotiab/azhacks) | Reusable async Python utilities for Azure Blob Storage, queues and tables. The README explains the supported operations and current testing limitations. |
-| [LiteDocAI](https://github.com/ebotiab/litedocai) | Experimental Python models for normalizing Azure Document Intelligence results, with a local JSON example. |
-| [Football for Burundi](https://github.com/ebotiab/football-for-burundi) | React landing page for the NEAR YOU charity football tournament in Madrid, held on 27 June 2026. |
-
-## Open-source contributions
-
-Selected contributions merged into the original projects:
-
-- **Presidio:** [analysis builder improvements](https://github.com/data-privacy-stack/presidio/pull/1295) and a [NER model configuration fix](https://github.com/data-privacy-stack/presidio/pull/1230).
-- **Presidio Research:** [configurable model evaluation and prediction](https://github.com/data-privacy-stack/presidio-research/pull/89).
-- **pdfly:** [PDF page removal functionality](https://github.com/py-pdf/pdfly/pull/59).
 
 ## Professional experience
 
@@ -51,6 +36,34 @@ Permanent contract start date: **1 October 2026**.
 
 - **Deep Learning models with PyTorch** for depression detection from voice samples.
 - Literature review in a laboratory environment.
+
+## Selected projects
+
+These public repositories show my work in Python, applied AI and automation. Each link opens the implementation and its documentation.
+
+### [Speech-based depression estimation](https://github.com/ebotiab/ade-daic-woz)
+
+A research pipeline for DAIC-WOZ: transcript preprocessing, class balancing, PyTorch training and evaluation, and a Streamlit explorer. Dataset access is restricted; the repository is a research implementation.
+
+### [azhacks](https://github.com/ebotiab/azhacks)
+
+Reusable async Python utilities for Azure Blob Storage, queues and tables. The README explains the supported operations and current testing limitations.
+
+### [LiteDocAI](https://github.com/ebotiab/litedocai)
+
+Experimental Python models for normalizing Azure Document Intelligence results, with a local JSON example.
+
+### [Football for Burundi](https://github.com/ebotiab/football-for-burundi)
+
+React landing page for the NEAR YOU charity football tournament in Madrid, held on 27 June 2026.
+
+## Open-source contributions
+
+Selected contributions merged into the original projects:
+
+- **Presidio:** [analysis builder improvements](https://github.com/data-privacy-stack/presidio/pull/1295) and a [NER model configuration fix](https://github.com/data-privacy-stack/presidio/pull/1230).
+- **Presidio Research:** [configurable model evaluation and prediction](https://github.com/data-privacy-stack/presidio-research/pull/89).
+- **pdfly:** [PDF page removal functionality](https://github.com/py-pdf/pdfly/pull/59).
 
 ---
 

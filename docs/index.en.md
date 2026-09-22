@@ -1,4 +1,5 @@
 ---
+description: "Enrique Botía Barberá’s professional profile: software engineering, Python backend development, data science and generative AI."
 hide:
   - navigation
   - toc
@@ -24,7 +25,7 @@ My background combines **Python backend development, data science and artificial
 </div>
 
 <div class="hero__photo" markdown>
-![Enrique Botía Barberá](assets/photo.jpeg){ .hero__img }
+![Enrique Botía Barberá](assets/photo.jpeg){ .hero__img width="280" height="280" fetchpriority="high" decoding="async" }
 </div>
 
 </div>

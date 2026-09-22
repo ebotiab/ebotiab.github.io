@@ -1,3 +1,7 @@
+---
+description: "Trayectoria y formación de Enrique Botía Barberá: Generative AI Engineer en IP Mind LTD y estudios de Data Science y Machine Learning en la UC3M."
+---
+
 # Sobre mí
 
 Soy Enrique, ingeniero de software centrado en backend Python. Actualmente trabajo como **Generative AI Engineer** en IP Mind LTD (Cambridge, remoto), donde diseño pipelines con FastAPI, n8n y Azure AI.

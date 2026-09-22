@@ -1,4 +1,5 @@
 ---
+description: "Perfil profesional de Enrique Botía Barberá: ingeniería de software, backend Python, ciencia de datos e inteligencia artificial generativa."
 hide:
   - navigation
   - toc
@@ -24,7 +25,7 @@ Mi trayectoria combina **desarrollo backend en Python, ciencia de datos e inteli
 </div>
 
 <div class="hero__photo" markdown>
-![Enrique Botía Barberá](assets/photo.jpeg){ .hero__img }
+![Enrique Botía Barberá](assets/photo.jpeg){ .hero__img width="280" height="280" fetchpriority="high" decoding="async" }
 </div>
 
 </div>

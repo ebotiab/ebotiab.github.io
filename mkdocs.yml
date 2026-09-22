@@ -48,6 +48,10 @@ nav:
 
 plugins:
   - search
+  - redirects:
+      redirect_maps:
+        services.md: skills.md
+        en/services.md: https://ebotiab.github.io/en/skills/
   - i18n:
       # docs_structure: suffix => usamos sufijos de idioma (index.md + index.en.md),
       #   en vez de subcarpetas tipo docs/es/ y docs/en/. Más sencillo.
@@ -67,6 +71,22 @@ plugins:
           build: true
           site_name: Enrique Botía Barberá
           site_description: Enrique Botía Barberá — professional profile, software engineering, Python and artificial intelligence.
+          theme:
+            palette:
+              - media: "(prefers-color-scheme: light)"
+                scheme: default
+                primary: green
+                accent: green
+                toggle:
+                  icon: material/weather-sunny
+                  name: Switch to dark mode
+              - media: "(prefers-color-scheme: dark)"
+                scheme: slate
+                primary: green
+                accent: light green
+                toggle:
+                  icon: material/weather-night
+                  name: Switch to light mode
           # Traducción de las entradas del nav a inglés.
           nav_translations:
             Inicio: Home
@@ -94,10 +114,13 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/ebotiab
+      name: GitHub
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/enrique-botia-barbera
+      name: LinkedIn
     - icon: fontawesome/brands/x-twitter
-      link: https://twitter.com/EnriqueB62827
-      name: "@EnriqueB62827 en Twitter/X"
+      link: https://x.com/EnriqueB62827
+      name: "X · @EnriqueB62827"
     - icon: fontawesome/solid/envelope
       link: mailto:enribotia@gmail.com
+      name: "Email · enribotia@gmail.com"

@@ -35,9 +35,11 @@ Keep the Spanish page and its `.en.md` counterpart aligned when updating content
 ## Build and deployment
 
 ```bash
-uv run mkdocs build
+uv run mkdocs build --strict
 ```
 
 The generated site is written to `site/`. The [deployment workflow](.github/workflows/deploy.yml) builds and publishes the website on pushes to `main`; it can also be started manually from GitHub Actions.
 
 See [pyproject.toml](pyproject.toml) for dependencies and `uv.lock` for the locked environment.
+
+The old `/services/` and `/en/services/` URLs redirect to the corresponding skills pages. Social sharing metadata lives in `overrides/main.html`; each page supplies its own description in its Markdown front matter.

@@ -1,3 +1,7 @@
+---
+description: "Enrique Botía Barberá’s technical skills in Python, FastAPI, generative AI, RAG, PyTorch, natural language processing and data engineering."
+---
+
 # Technical skills
 
 My experience spans backend development, data engineering and applied artificial intelligence.

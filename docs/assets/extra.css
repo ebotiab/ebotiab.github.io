@@ -28,6 +28,19 @@
 [data-md-color-scheme="slate"][data-md-color-accent="light-green"] {
   --md-accent-fg-color:            #81c784;
   --md-accent-fg-color--transparent: #81c78422;
+  --md-typeset-a-color:            #81c784;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .md-button:not(.md-button--primary) {
+  color: #81c784;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .md-button:is(:hover, :focus) {
+  color: #1e2129;
+}
+
+[data-md-color-scheme="slate"] .md-nav__link:is(.md-nav__link--active, :hover, :focus) {
+  color: #81c784;
 }
 
 /* ============================================================
@@ -49,6 +62,7 @@
 
 .hero__text {
   flex: 1 1 420px;
+  min-width: 0;
 }
 
 .hero__photo {
@@ -88,10 +102,11 @@
 }
 
 /* Fila de botones CTA — se apilan en pantallas estrechas. */
-.hero__actions {
+.hero__actions > p {
   display: flex;
   gap: 0.75rem;
   flex-wrap: wrap;
+  margin: 0;
 }
 
 /* Especialidad profesional bajo el nombre. */
@@ -101,18 +116,13 @@
   color: var(--md-default-fg-color--light);
 }
 
-/* Ocultar el título de página de MkDocs ("Inicio") en la home,
-   ya que nuestro propio H1 del hero cumple esa función. */
-.md-content__inner > h1:first-child {
-  display: none;
-}
-
 /* Responsive: en móvil el hero se apila y centramos el texto. */
 @media (max-width: 768px) {
   .hero {
     gap: 1.5rem;
     text-align: center;
     justify-content: center;
+    margin: 0.5rem auto 2rem;
   }
   .hero__img,
   .hero__photo img {
@@ -120,7 +130,31 @@
     height: 200px;
     margin: 0 auto;
   }
-  .hero__actions {
+  .hero__name {
+    font-size: clamp(1.8rem, 8vw, 2.6rem) !important;
+  }
+  .hero__actions > p {
     justify-content: center;
+  }
+}
+
+/* La versión impresa conserva el contenido útil para un currículum. */
+@media print {
+  .hero {
+    margin: 0 0 1.5rem;
+    gap: 1.5rem;
+  }
+  .hero__actions,
+  .md-footer {
+    display: none;
+  }
+  .hero__img,
+  .hero__photo img {
+    width: 140px;
+    height: 140px;
+    box-shadow: none;
+  }
+  h2, h3 {
+    break-after: avoid;
   }
 }

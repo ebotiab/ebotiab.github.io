@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+  {{ super() }}
+  {% if page %}
+    {% set description = page.meta.description | default(config.site_description, true) %}
+    {% set title = config.site_name if page.is_homepage else page.title ~ " — " ~ config.site_name %}
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="{{ config.site_name | e }}">
+    <meta property="og:title" content="{{ title | e }}">
+    <meta property="og:description" content="{{ description | e }}">
+    <meta property="og:url" content="{{ page.canonical_url | e }}">
+    <meta property="og:locale" content="{{ 'en_GB' if config.theme.language == 'en' else 'es_ES' }}">
+    <meta property="og:image" content="https://ebotiab.github.io/assets/photo.jpeg">
+    <meta property="og:image:alt" content="Enrique Botía Barberá">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ title | e }}">
+    <meta name="twitter:description" content="{{ description | e }}">
+    <meta name="twitter:image" content="https://ebotiab.github.io/assets/photo.jpeg">
+  {% endif %}
+{% endblock %}

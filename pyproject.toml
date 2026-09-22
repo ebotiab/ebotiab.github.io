@@ -7,6 +7,7 @@ dependencies = [
     # Pin to 9.5.x: versiones 9.7+ incluyen un banner del mantenedor sobre MkDocs 2.0.
     # 9.5.x es estable, mantiene todas las features que usamos y no imprime el warning.
     "mkdocs-material>=9.5,<9.6",
+    "mkdocs-redirects==1.2.2",
     "mkdocs-static-i18n>=1.2",
 ]
 
